@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-inter">
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="">
+      <nav
+        id="navbar"
+        class="fixed w-full z-10 top-0 left-0 transition-shadow duration-300 text-biru-utama p-4 font-bold bg-white"
+      >
+        <div
+          class="container mx-auto flex justify-between items-center font-inter"
+        >
+          <!-- Logo -->
+          <a href="#" class=""
+            ><img src="/src/img/Anak Lebah.svg" class="w-28" alt=""
+          /></a>
+
+          <!-- Hamburger Button -->
+          <button
+            id="menuBtn"
+            class="lg:hidden block text-2xl focus:outline-none"
+          >
+            &#9776;
+          </button>
+
+          <!-- Menu Links -->
+          <ul
+            id="menu"
+            class="hidden lg:flex lg:space-x-6 w-full lg:w-auto lg:static absolute top-16 left-0 bg-blue-500 lg:bg-transparent"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                >Beranda</a
+              >
+            </li>
+
+            <!-- Tentang Kami Dropdown -->
+            <li class="relative group">
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                id="tentang-btn"
+                >Tentang Kami</a
+              >
+              <ul
+                id="tentang-menu"
+                class="hidden absolute bg-white text-biru-utama mt-2 w-48 shadow-md rounded z-10"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Profil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Tim Kami</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Kontak</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Izin dan Legalitas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Testimonial</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Daycare Dropdown -->
+            <li class="relative group">
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                id="daycare-btn"
+                >Daycare</a
+              >
+              <ul
+                id="daycare-menu"
+                class="hidden absolute bg-white text-biru-utama mt-2 w-48 shadow-md rounded z-10"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Program</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Keunggulan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Fasilitas C</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Jam Operasional</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Paket Biaya Daycare</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                >Cara Daftar</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                >Berita</a
+              >
+            </li>
+
+            <!-- Lainnya Dropdown -->
+            <li class="relative group">
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                id="lainnya-btn"
+                >Lainnya</a
+              >
+              <ul
+                id="lainnya-menu"
+                class="hidden absolute bg-white text-biru-utama mt-2 w-48 shadow-md rounded z-10"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Video</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Galeri</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero py-16 font-inter pt-24 h-screen relative">
+      <!-- Gambar Sudut Atas Kanan -->
+      <img
+        src="/src/img/stars_kanan_atas.svg"
+        alt="Top Right Image"
+        class="absolute top-16 right-0 w-36 h-24 z-9"
+      />
+
+      <!-- Gambar Sudut Kiri Bawah -->
+      <img
+        src="/src/img/stars_kiri_bawah.svg"
+        alt="Bottom Left Image"
+        class="absolute bottom-0 left-0 w-20 h-20"
+      />
+
+      <div
+        class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between h-full"
+      >
+        <!-- Kiri: Header dan Deskripsi -->
+        <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+          <h1 class="text-4xl font-bold text-teal-900 mb-4">
+            Anak Lebah Daycare
+          </h1>
+          <p class="text-lg text-teal-900 mb-6 max-w-xl py-8">
+            Anak Lebah Daycare adalah tempat yang tepat untuk mendukung tumbuh
+            kembang buah hati Anda! Kami menawarkan layanan daycare berkualitas
+            dengan program kreatif, fasilitas memadai, dan tenaga pengasuh serta
+            pendidik berpengalaman. Di sini, anak Anda dapat belajar, bermain,
+            dan bertumbuh dalam lingkungan yang aman, nyaman, dan penuh
+            perhatian.
+          </p>
+          <a
+            href="#daftar"
+            class="bg-ijotosca-daycare text-white py-3 px-8 rounded-lg text-lg hover:bg-teal-800 transition duration-300"
+          >
+            Daftar Sekarang
+          </a>
+        </div>
+
+        <!-- Kanan: Gambar -->
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+          <img src="/src/img/hero_pict.svg" alt="Hero Image" class="h-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Keunggulan -->
+    <section class="bg-yellow-300 py-16">
+      <div class="container lg:flex mx-auto px-6">
+        <!-- Judul dan Deskripsi -->
+        <div class="mb-12 w-full mr-12">
+          <h3 class="text-lg text-yellow-700 font-semibold mb-2">Keunggulan</h3>
+          <h2 class="text-4xl font-bold text-gray-900 mb-12">
+            Keunggulan Bergabung bersama Anak Lebah Daycare
+          </h2>
+          <p class="text-gray-700 leading-relaxed max-w-xl">
+            Bunda dan Ayah, Kami memahami betapa pentingnya memberikan yang
+            terbaik untuk buah hati tercinta. Oleh karena itu, kami hadir dengan
+            berbagai keunggulan yang dirancang khusus untuk mendukung
+            kenyamanan, keamanan, dan perkembangan optimal anak Anda. Dengan
+            fasilitas modern, program edukatif yang menarik, serta pengasuh
+            profesional yang penuh perhatian, kami siap menjadi mitra terpercaya
+            Anda dalam mendampingi tumbuh kembang si kecil.
+          </p>
+          <div class="mt-12">
+            <button
+              class="bg-ijotosca-daycare text-white px-8 py-3 rounded-lg text-lg hover:bg-teal-800 transition duration-300"
+            >
+              Pelajari Lebih Lanjut
+            </button>
+          </div>
+        </div>
+
+        <!-- Kontainer Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-8 py-12 bg-yellow-200"
+        >
+          <!-- Card 1 -->
+          <div class="bg-teal-400 p-6 rounded-lg shadow-lg">
+            <img src="icon1.png" alt="icon" class="h-12 w-12 mb-4" />
+            <h3 class="text-white font-bold text-lg mb-2">
+              Lingkungan Seperti di Rumah
+            </h3>
+            <p class="text-white text-sm">
+              Kami menciptakan lingkungan yang menyerupai rumah agar anak-anak
+              Anda merasa nyaman seperti di rumah.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="icon2.png" alt="icon" class="h-12 w-12 mb-4" />
+            <h3 class="text-gray-800 font-bold text-lg mb-2">
+              Aman dan Nyaman
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Standar keamanan memadai dan suasana nyaman, mendukung anak
+              bermain dan belajar.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="icon3.png" alt="icon" class="h-12 w-12 mb-4" />
+            <h3 class="text-gray-800 font-bold text-lg mb-2">
+              Makanan Sehat & Bergizi
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Tersedia makanan sehat dan bergizi, dengan menu berbeda setiap
+              hari.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="icon4.png" alt="icon" class="h-12 w-12 mb-4" />
+            <h3 class="text-gray-800 font-bold text-lg mb-2">
+              Pengasuh Berkualitas
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Didukung oleh pengasuh berkualitas yang memahami kebutuhan anak.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tombol -->
+      </div>
+    </section>
+
+    <!-- Fasilitas Section -->
+
+    <section class="bg-gray-50 py-12 px-12">
+      <div class="max-w-full mx-auto 2xl:px-48">
+        <!-- Judul Section -->
+        <div class="text-center mb-10">
+          <p class="text-red-400 font-semibold">Fasilitas</p>
+          <h2 class="text-3xl font-black text-gray-800 leading-tight">
+            Kami Memberikan <span class="text-teal-500">Fasilitas Terbaik</span
+            ><br />
+            Pada Buah Hati Anda
+          </h2>
+          <p class="text-gray-600 mt-4">
+            Anak Lebah Daycare menjadikan pelayanan untuk sang buah hati sebagai
+            prioritas utama, dengan fasilitas lengkap untuk mendukung tumbuh
+            kembang anak dalam lingkungan yang aman, nyaman, dan menyenangkan.
+          </p>
+        </div>
+
+        <!-- Grid Card Fasilitas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center flex-none 2xl:flex space-x-4 items-center"
+          >
+            <div class="w-28 flex-shrink-0 mx-auto">
+              <img
+                src="/src/img/robot.svg"
+                alt="Mainan"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="text-xl font-black text-gray-800">
+                Mainan & Buku Edukatif
+              </h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Kami menyediakan mainan dan buku edukatif untuk mendukung
+                perkembangan anak. Sehingga proses bermain sekaligus belajar
+                menjadi lebih efektif dan menyenangkan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center 2xl:flex space-x-4 items-center"
+          >
+            <div class="w-28 flex-shrink-0 mx-auto">
+              <img
+                src="/src/img/wanita.svg"
+                alt="Mainan"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="text-xl font-black text-gray-800">
+                Pengasuh Berpengalaman
+              </h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Pengasuh kami yang berpengalaman dan hangat mampu menjalin
+                kedekatan dengan anak-anak, menciptakan rasa nyaman sekaligus
+                mendukung perkembangan emosional dan sosial mereka
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center 2xl:flex space-x-4 items-center"
+          >
+            <div class="w-28 flex-shrink-0 mx-auto">
+              <img
+                src="/src/img/burung_hantu.svg"
+                alt="Mainan"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="text-xl font-black text-gray-800">Belajar Bersama</h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Kami menyediakan jadwal belajar terstruktur bersama tenaga
+                pendidik profesional yang berpengalaman, khusus untuk anak usia
+                2 tahun ke atas. Dengan pendekatan yang menyenangkan dan sesuai
+                dengan tahap perkembangan
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center 2xl:flex space-x-4 items-center"
+          >
+            <div class="w-28 flex-shrink-0 mx-auto">
+              <img
+                src="/src/img/Piring.svg"
+                alt="Mainan"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="text-xl font-black text-gray-800">Makanan Bergizi</h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Menyajikan pilihan makanan sehat dan bergizi, dilengkapi dengan
+                camilan dan buah segar setiap hari. menu variatif yang berganti
+                setiap harinya dirancang khusus untuk memenuhi kebutuhan nutrisi
+                anak, memastikan mereka tumbuh sehat dan penuh energi
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center 2xl:flex space-x-4 items-center"
+          >
+            <div class="w-28 flex-shrink-0 mx-auto">
+              <img
+                src="/src/img/kasur.svg"
+                alt="Mainan"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="text-xl font-black text-gray-800">
+                Tempat Tidur Nyaman
+              </h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Setiap ananda tidur masing-masing menggunakan kasur, bantal yang
+                terpisah (tidak segaring) agar lebih nyaman. Kami memastikan
+                waktu istirahat mereka lebih tenang, higienis dan berkualitas
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center 2xl:flex space-x-4 items-center"
+          >
+            <div class="w-28 flex-shrink-0 mx-auto">
+              <img
+                src="/src/img/pulau.svg"
+                alt="Mainan"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="text-xl font-black text-gray-800">Field Trip</h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Kami mengadakan kegiatan trip bermain ke luar setiap dua bulan
+                sekali, memberikan pengalaman seru dan edukatif bagi anak-anak.
+                Aktivitas ini dirancang untuk memperluas wawasan mereka,
+                memperkuat interaksi sosial, serta menciptakan momen bermain
+                yang menyenangkan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Section -->
+
+    <section class="bg-gray-50 py-12 px-12">
+      <div class="max-w-full justify-center mx-auto 2xl:px-48">
+        <!-- Judul Section -->
+        <div class="text-center mb-10">
+          <p class="text-red-400 font-semibold">Program Daycare</p>
+          <h2 class="text-3xl font-black text-gray-800 leading-tight">
+            Layanan Program Daycare Sesuai Usia
+          </h2>
+          <p class="text-gray-600 mt-4 max-w-4xl mx-auto">
+            Anak Lebah Daycare menyediakan program kreatif yang disesuaikan
+            dengan kebutuhan tumbuh kembang anak di setiap tahap usia, mendukung
+            belajar dan tumbuh dengan cara menyenangkan.
+          </p>
+        </div>
+
+        <div
+          class="max-w-full lg:flex items-center justify-center lg:gap-x-12 px-14 mx-auto"
+        >
+          <img src="/src/img/infant_2.svg" alt="" class="mx-auto" />
+          <img src="/src/img/toddler.svg" alt="" class="mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <!-- Script untuk Navbar dan Hamburger -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("menu");
+
+      // Hamburger menu toggle
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("flex");
+        menu.classList.toggle("flex-col");
+      });
+
+      // Dropdown menus
+      const dropdowns = [
+        { button: "tentang-btn", menu: "tentang-menu" },
+        { button: "daycare-btn", menu: "daycare-menu" },
+        { button: "lainnya-btn", menu: "lainnya-menu" },
+      ];
+
+      dropdowns.forEach(({ button, menu }) => {
+        const btn = document.getElementById(button);
+        const dropdown = document.getElementById(menu);
+
+        // Show dropdown on hover or focus
+        btn.addEventListener("mouseenter", () => {
+          dropdown.classList.remove("hidden");
+        });
+        btn.addEventListener("mouseleave", () => {
+          setTimeout(() => {
+            if (!dropdown.matches(":hover")) {
+              dropdown.classList.add("hidden");
+            }
+          }, 200);
+        });
+
+        dropdown.addEventListener("mouseenter", () => {
+          dropdown.classList.remove("hidden");
+        });
+        dropdown.addEventListener("mouseleave", () => {
+          dropdown.classList.add("hidden");
+        });
+      });
+    </script>
+
+    <!-- Scroll Navbar -->
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("shadow-md");
+        } else {
+          navbar.classList.remove("shadow-md");
+        }
+      });
+    </script>
+  </body>
+</html>
