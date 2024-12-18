@@ -39,7 +39,7 @@
           <!-- Menu Links -->
           <ul
             id="menu"
-            class="hidden lg:flex lg:space-x-6 w-full lg:w-auto lg:static absolute top-16 left-0 bg-blue-500 lg:bg-transparent"
+            class="hidden lg:flex lg:space-x-6 w-full lg:w-auto lg:static absolute top-16 left-0 bg-white lg:bg-transparent"
           >
             <li>
               <a
@@ -238,7 +238,7 @@
             perhatian.
           </p>
           <a
-            href="#daftar"
+            href="https://api.whatsapp.com/send/?phone=6285133402896&text&type=phone_number&app_absent=0"
             class="bg-ijotosca-daycare text-white py-3 px-8 rounded-lg text-lg hover:bg-teal-800 transition duration-300"
           >
             Daftar Sekarang
@@ -285,7 +285,7 @@
         >
           <!-- Card 1 -->
           <div class="bg-teal-400 p-6 rounded-lg shadow-lg">
-            <img src="icon1.png" alt="icon" class="h-12 w-12 mb-4" />
+            <img src="/src/img/rumah3d.png" alt="icon" class="h-20 w-20 mb-4" />
             <h3 class="text-white font-bold text-lg mb-2">
               Lingkungan Seperti di Rumah
             </h3>
@@ -297,7 +297,11 @@
 
           <!-- Card 2 -->
           <div class="bg-white p-6 rounded-lg shadow-lg">
-            <img src="icon2.png" alt="icon" class="h-12 w-12 mb-4" />
+            <img
+              src="/src/img/gembok3d.png"
+              alt="icon"
+              class="h-20 w-20 mb-4"
+            />
             <h3 class="text-gray-800 font-bold text-lg mb-2">
               Aman dan Nyaman
             </h3>
@@ -309,7 +313,11 @@
 
           <!-- Card 3 -->
           <div class="bg-white p-6 rounded-lg shadow-lg">
-            <img src="icon3.png" alt="icon" class="h-12 w-12 mb-4" />
+            <img
+              src="/src/img/tudung3d.png"
+              alt="icon"
+              class="h-20 w-20 mb-4"
+            />
             <h3 class="text-gray-800 font-bold text-lg mb-2">
               Makanan Sehat & Bergizi
             </h3>
@@ -321,7 +329,7 @@
 
           <!-- Card 4 -->
           <div class="bg-white p-6 rounded-lg shadow-lg">
-            <img src="icon4.png" alt="icon" class="h-12 w-12 mb-4" />
+            <img src="/src/img/cewe3d.png" alt="icon" class="h-20 w-20 mb-4" />
             <h3 class="text-gray-800 font-bold text-lg mb-2">
               Pengasuh Berkualitas
             </h3>
@@ -515,11 +523,371 @@
         <div
           class="max-w-full lg:flex items-center justify-center lg:gap-x-12 px-14 mx-auto"
         >
-          <img src="/src/img/infant_2.svg" alt="" class="mx-auto" />
-          <img src="/src/img/toddler.svg" alt="" class="mx-auto" />
+          <img
+            src="/src/img/infant_2.svg"
+            alt=""
+            class="mx-auto cursor-pointer"
+          />
+          <img
+            src="/src/img/toddler.svg"
+            alt=""
+            class="mx-auto cursor-pointer"
+          />
         </div>
       </div>
     </section>
+
+    <!-- Gallery Foto -->
+
+    <section class="bg-gray-50 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Judul Section -->
+        <h2 class="text-4xl font-black text-center text-gray-800 mb-8">
+          Galeri Foto
+        </h2>
+
+        <!-- Grid Galeri -->
+        <div
+          id="gallery-grid"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- Foto Default -->
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="/src/img/gambar1.jpg"
+              alt="Foto 1"
+              class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="/src/img/gambar2.jpg"
+              alt="Foto 2"
+              class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="/src/img/gambar3.jpg"
+              alt="Foto 3"
+              class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="/src/img/gambar4.jpg"
+              alt="Foto 4"
+              class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+
+        <!-- Tombol Selengkapnya -->
+        <div class="text-center mt-8">
+          <button
+            id="load-more-gallery"
+            class="bg-ijotosca-daycare hover:bg-teal-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300"
+          >
+            Lihat Lebih Banyak →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paket Biaya Section -->
+
+    <section class="bg-kuning-daycare py-12 px-12">
+      <div class="max-w-full justify-center mx-auto 2xl:px-48">
+        <!-- Judul Section -->
+        <div class="text-center mb-10">
+          <p class="text-red-400 font-semibold">Paket Biaya Daycare</p>
+          <h2 class="text-3xl font-black text-gray-800 leading-tight">
+            Biaya Layanan Daycare
+          </h2>
+          <p class="text-gray-600 mt-4 max-w-4xl mx-auto mb-8">
+            Fundaycare menawarkan biaya sebanding dengan pelayanan terbaik,
+            fasilitas unggulan, dan program yang mendukung tumbuh kembang anak.
+            Orang tua pun merasa tenang karena buah hati berada di lingkungan
+            yang aman, nyaman, dan penuh perhatian.
+          </p>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6285133402896&text&type=phone_number&app_absent=0"
+            class="bg-ijotosca-daycare text-white py-3 px-8 font-medium rounded-lg text-lg hover:bg-teal-800 transition duration-300 mx-auto justify-center text-center"
+          >
+            Daftar Sekarang
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jadwal Section -->
+
+    <section class="bg-gray-50 py-12 px-12">
+      <div class="max-w-full justify-center mx-auto 2xl:px-48">
+        <!-- Judul Section -->
+        <div class="text-center mb-10">
+          <p class="text-red-400 font-semibold">Jam Operasional</p>
+          <h2 class="text-3xl font-black text-gray-800 leading-tight">
+            Jam Operasional Daycare
+          </h2>
+        </div>
+
+        <div
+          class="max-w-full lg:flex items-center justify-center lg:gap-x-12 px-14 mx-auto"
+        >
+          <img src="/src/img/jadwal.svg" alt="" class="mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+
+    <section class="testimonial-section py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center mb-8">Testimoni Pengguna</h2>
+        <div class="relative">
+          <div
+            id="testimonial-slider"
+            class="flex overflow-hidden transition-transform duration-500 ease-in-out"
+          >
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card flex-shrink-0 w-full md:w-1/3 p-4">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-600 text-lg">
+                  "Layanan luar biasa! Sangat membantu dan memudahkan pekerjaan
+                  saya."
+                </p>
+                <h4 class="mt-4 text-xl font-semibold text-gray-800">
+                  Nengkida
+                </h4>
+                <p class="text-gray-500">Ibu Rizkia</p>
+              </div>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card flex-shrink-0 w-full md:w-1/3 p-4">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-600 text-lg">
+                  "Saya sangat puas dengan produk ini. Tidak ada masalah sama
+                  sekali."
+                </p>
+                <h4 class="mt-4 text-xl font-semibold text-gray-800">Hanni</h4>
+                <p class="text-gray-500">bunda Farhan</p>
+              </div>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card flex-shrink-0 w-full md:w-1/3 p-4">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-600 text-lg">
+                  "Produk ini benar-benar membantu kami mencapai tujuan bisnis
+                  dengan cepat."
+                </p>
+                <h4 class="mt-4 text-xl font-semibold text-gray-800">Sarah</h4>
+                <p class="text-gray-500">Ibu Husna</p>
+              </div>
+            </div>
+            <!-- Testimonial Card 4 -->
+            <div class="testimonial-card flex-shrink-0 w-full md:w-1/3 p-4">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-600 text-lg">
+                  "Luar biasa! Sangat puas dengan pelayanan dan kualitas yang
+                  diberikan."
+                </p>
+                <h4 class="mt-4 text-xl font-semibold text-gray-800">
+                  Michael Brown
+                </h4>
+                <p class="text-gray-500">Designer</p>
+              </div>
+            </div>
+            <!-- Testimonial Card 5 -->
+            <div class="testimonial-card flex-shrink-0 w-full md:w-1/3 p-4">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-600 text-lg">
+                  "Saya akan terus menggunakan produk ini untuk keperluan bisnis
+                  kami."
+                </p>
+                <h4 class="mt-4 text-xl font-semibold text-gray-800">
+                  David Miller
+                </h4>
+                <p class="text-gray-500">Entrepreneur</p>
+              </div>
+            </div>
+            <!-- Testimonial Card 6 -->
+            <div class="testimonial-card flex-shrink-0 w-full md:w-1/3 p-4">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-600 text-lg">
+                  "Tidak ada yang lebih baik dari layanan yang diberikan oleh
+                  tim ini."
+                </p>
+                <h4 class="mt-4 text-xl font-semibold text-gray-800">
+                  Emily Davis
+                </h4>
+                <p class="text-gray-500">Marketing Manager</p>
+              </div>
+            </div>
+          </div>
+          <!-- Prev & Next Buttons -->
+          <button
+            id="prevBtn"
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-ijomuda-daycare/90 text-white rounded-full p-2 w-10"
+          >
+            &#10094;
+          </button>
+          <button
+            id="nextBtn"
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-ijomuda-daycare/90 text-white rounded-full p-2 w-10"
+          >
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legalitas dan Izin -->
+
+    <section class="bg-gray-50 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Judul Section -->
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          Izin Dan Legalitas
+        </h2>
+
+        <!-- Grid Foto Utama -->
+        <div
+          id="izin-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
+          <!-- Izin 1 -->
+          <div class="p-4 border border-gray-200 rounded-lg shadow-md">
+            <img
+              src="/src/img/contoh1.jpg"
+              alt="Izin 1"
+              class="w-full h-auto rounded-md"
+            />
+          </div>
+          <!-- Izin 2 -->
+          <div class="p-4 border border-gray-200 rounded-lg shadow-md">
+            <img
+              src="/src/img/contoh2.jpg"
+              alt="Izin 2"
+              class="w-full h-auto rounded-md"
+            />
+          </div>
+          <!-- Izin 3 -->
+          <div class="p-4 border border-gray-200 rounded-lg shadow-md">
+            <img
+              src="/src/img/contoh3.jpg"
+              alt="Izin 3"
+              class="w-full h-auto rounded-md"
+            />
+          </div>
+          <!-- Izin 4 -->
+          <div class="p-4 border border-gray-200 rounded-lg shadow-md">
+            <img
+              src="/src/img/contoh4.jpg"
+              alt="Izin 4"
+              class="w-full h-auto rounded-md"
+            />
+          </div>
+        </div>
+
+        <!-- Tombol Selengkapnya -->
+        <div class="text-center mt-8">
+          <button
+            id="load-more"
+            class="bg-ijotosca-daycare hover:bg-teal-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300"
+          >
+            Lihat Semua Izin dan Legalitas →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-ijotosca-daycare text-white py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Bagian Lokasi -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Lokasi Kami</h3>
+            <p class="text-white">Kunjungi kami di alamat berikut:</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.122127767497!2d107.5385019!3d-6.8759681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e513e336e335%3A0xd3991bff7ed36515!2sAnak%20Lebah%20Daycare!5e0!3m2!1sid!2sid!4v1734483363833!5m2!1sid!2sid"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Bagian Sosial Media -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Ikuti Kami</h3>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-blue-500 hover:text-blue-300 transition-colors duration-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3C22.0424 3.6754 20.9821 4.1921 19.86 4.53C19.2577 3.8372 18.4573 3.3467 17.567 3.123C16.6767 2.8993 15.7395 2.9523 14.8821 3.276C14.0247 3.5997 13.2819 4.1744 12.75 4.921C12.2181 5.6676 11.9178 6.5502 11.875 7.46V8.53C10.044 8.5751 8.2294 8.1612 6.5499 7.321C4.8703 6.4808 3.3715 5.2301 2.16 3.66C2.16 3.66 -0.359998 9.02 5.34 12.14C4.077 12.7999 2.6897 13.1333 1.29 13.11C6.06 15.72 12.29 13.11 12.29 7.5C12.2883 7.2202 12.2595 6.9414 12.204 6.67C13.6717 5.5626 15.4621 4.9425 17.32 4.88C16.8852 5.4458 16.3706 5.9312 15.79 6.32C16.3702 6.2397 16.9356 6.0921 17.48 5.88C17.0406 6.4553 16.5125 6.9466 15.92 7.33L23 3Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-blue-400 hover:text-blue-200 transition-colors duration-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3C22.0424 3.6754 20.9821 4.1921 19.86 4.53C19.2577 3.8372 18.4573 3.3467 17.567 3.123C16.6767 2.8993 15.7395 2.9523 14.8821 3.276C14.0247 3.5997 13.2819 4.1744 12.75 4.921C12.2181 5.6676 11.9178 6.5502 11.875 7.46V8.53C10.044 8.5751 8.2294 8.1612 6.5499 7.321C4.8703 6.4808 3.3715 5.2301 2.16 3.66C2.16 3.66 -0.359998 9.02 5.34 12.14C4.077 12.7999 2.6897 13.1333 1.29 13.11C6.06 15.72 12.29 13.11 12.29 7.5C12.2883 7.2202 12.2595 6.9414 12.204 6.67C13.6717 5.5626 15.4621 4.9425 17.32 4.88C16.8852 5.4458 16.3706 5.9312 15.79 6.32C16.3702 6.2397 16.9356 6.0921 17.48 5.88C17.0406 6.4553 16.5125 6.9466 15.92 7.33L23 3Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-pink-500 hover:text-pink-300 transition-colors duration-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163C6.577 2.163 2.163 6.577 2.163 12C2.163 17.423 6.577 21.837 12 21.837C17.423 21.837 21.837 17.423 21.837 12C21.837 6.577 17.423 2.163 12 2.163ZM12 19.837C7.581 19.837 4.163 16.419 4.163 12C4.163 7.581 7.581 4.163 12 4.163C16.419 4.163 19.837 7.581 19.837 12C19.837 16.419 16.419 19.837 12 19.837ZM12 7.163C9.243 7.163 7.163 9.243 7.163 12C7.163 14.757 9.243 16.837 12 16.837C14.757 16.837 16.837 14.757 16.837 12C16.837 9.243 14.757 7.163 12 7.163ZM12 14.837C10.598 14.837 9.163 13.402 9.163 12C9.163 10.598 10.598 9.163 12 9.163C13.402 9.163 14.837 10.598 14.837 12C14.837 13.402 13.402 14.837 12 14.837ZM16.837 7.163C17.319 7.163 17.713 6.769 17.713 6.287C17.713 5.805 17.319 5.411 16.837 5.411C16.355 5.411 15.961 5.805 15.961 6.287C15.961 6.769 16.355 7.163 16.837 7.163Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Bagian Hak Cipta -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Hak Cipta</h3>
+            <p class="text-lg text-white">
+              &copy; 2024 Nama Perusahaan atau Organisasi. Semua hak cipta
+              dilindungi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bagian Footer bawah -->
+        <div class="text-center mt-12 border-t border-gray-700 pt-6 text-sm">
+          <p class="text-white">Dibuat dengan ❤️ oleh Tim Kreatif</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- JavaScript -->
     <!-- Script untuk Navbar dan Hamburger -->
@@ -576,6 +944,131 @@
         } else {
           navbar.classList.remove("shadow-md");
         }
+      });
+    </script>
+
+    <!-- Gallery -->
+    <script>
+      const galleryGrid = document.getElementById("gallery-grid");
+      const loadMoreGallery = document.getElementById("load-more-gallery");
+
+      // Data foto tambahan
+      const morePhotos = [
+        { src: "./src/img/gambar5.png", alt: "Foto 5" },
+        { src: "./src/img/gambar6.png", alt: "Foto 6" },
+        { src: "./src/img/gambar7.png", alt: "Foto 7" },
+        { src: "./src/img/gambar8.png", alt: "Foto 8" },
+      ];
+
+      // Event untuk menampilkan foto tambahan
+      loadMoreGallery.addEventListener("click", () => {
+        morePhotos.forEach((photo) => {
+          const photoDiv = document.createElement("div");
+          photoDiv.className = "overflow-hidden rounded-lg shadow-lg";
+
+          const photoImg = document.createElement("img");
+          photoImg.src = photo.src;
+          photoImg.alt = photo.alt;
+          photoImg.className =
+            "w-full h-48 object-cover hover:scale-110 transition-transform duration-300";
+
+          photoDiv.appendChild(photoImg);
+          galleryGrid.appendChild(photoDiv);
+        });
+
+        loadMoreGallery.style.display = "none"; // Hilangkan tombol setelah diklik
+      });
+    </script>
+
+    <!-- Testimonial -->
+
+    <script>
+      const slider = document.getElementById("testimonial-slider");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      let currentIndex = 0;
+
+      // Fungsi untuk menghitung slide dan memperbarui slider
+      function updateSlider() {
+        let slideWidth;
+        let totalSlides;
+
+        // Tentukan berapa banyak card yang akan ditampilkan per slide
+        if (window.innerWidth >= 1024) {
+          // Desktop: 3 card per slide
+          slideWidth = 33.33; // 100% / 3 = 33.33%
+          totalSlides = Math.ceil(slider.children.length / 3); // Menghitung jumlah slide (2 slide untuk 6 card)
+        } else {
+          // Mobile: 1 card per slide
+          slideWidth = 100; // 100% per slide untuk mobile
+          totalSlides = slider.children.length; // 1 card per slide, jadi total slide sama dengan jumlah card
+        }
+
+        // Update posisi slider
+        slider.style.transition = "transform 0.3s ease"; // Menambahkan efek smooth
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+
+        // Pastikan currentIndex tetap berada dalam jumlah slide yang valid
+        if (currentIndex >= totalSlides) {
+          currentIndex = 0;
+        } else if (currentIndex < 0) {
+          currentIndex = totalSlides - 1;
+        }
+      }
+
+      // Tombol Prev
+      prevBtn.addEventListener("click", () => {
+        currentIndex--;
+        updateSlider();
+      });
+
+      // Tombol Next
+      nextBtn.addEventListener("click", () => {
+        currentIndex++;
+        updateSlider();
+      });
+
+      // Responsif: Update jumlah slide saat ukuran jendela berubah
+      window.addEventListener("resize", () => {
+        updateSlider();
+      });
+
+      // Inisialisasi pertama kali slider
+      updateSlider();
+    </script>
+
+    <!-- Legalitas Section -->
+
+    <!-- JavaScript -->
+    <script>
+      const gridContainer = document.getElementById("izin-grid");
+      const loadMoreBtn = document.getElementById("load-more");
+
+      // Data Dummy untuk Izin Tambahan
+      const extraData = [
+        { src: "https://via.placeholder.com/300", alt: "Izin 5" },
+        { src: "https://via.placeholder.com/300", alt: "Izin 6" },
+        { src: "https://via.placeholder.com/300", alt: "Izin 7" },
+        { src: "https://via.placeholder.com/300", alt: "Izin 8" },
+      ];
+
+      // Event untuk Tombol Selengkapnya
+      loadMoreBtn.addEventListener("click", () => {
+        extraData.forEach((item) => {
+          const newDiv = document.createElement("div");
+          newDiv.className = "p-4 border border-gray-200 rounded-lg shadow-md";
+
+          const newImage = document.createElement("img");
+          newImage.src = item.src;
+          newImage.alt = item.alt;
+          newImage.className = "w-full h-auto rounded-md";
+
+          newDiv.appendChild(newImage);
+          gridContainer.appendChild(newDiv);
+        });
+
+        loadMoreBtn.style.display = "none"; // Hilangkan tombol setelah load
       });
     </script>
   </body>
