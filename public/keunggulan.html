@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-inter">
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="">
+      <nav
+        id="navbar"
+        class="fixed w-full z-10 top-0 left-0 transition-shadow duration-300 text-biru-utama p-4 font-bold bg-white"
+      >
+        <div
+          class="container mx-auto flex justify-between items-center font-inter"
+        >
+          <!-- Logo -->
+          <a href="index.html" class=""
+            ><img src="../src/img/Anak Lebah.svg" class="w-28" alt=""
+          /></a>
+
+          <!-- Hamburger Button -->
+          <button
+            id="menuBtn"
+            class="lg:hidden block text-2xl focus:outline-none"
+          >
+            &#9776;
+          </button>
+
+          <!-- Menu Links -->
+          <ul
+            id="menu"
+            class="hidden lg:flex lg:space-x-6 w-full lg:w-auto lg:static absolute top-16 left-0 bg-white lg:bg-transparent"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                >Beranda</a
+              >
+            </li>
+
+            <!-- Tentang Kami Dropdown -->
+            <li class="relative group">
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                id="tentang-btn"
+                >Tentang Kami</a
+              >
+              <ul
+                id="tentang-menu"
+                class="hidden absolute bg-white text-biru-utama mt-2 w-48 shadow-md rounded z-10"
+              >
+                <li>
+                  <a
+                    href="about.html"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Profil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Tim Kami</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Kontak</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#izin"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Izin dan Legalitas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#testimoni"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Testimonial</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Daycare Dropdown -->
+            <li class="relative group">
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                id="daycare-btn"
+                >Daycare</a
+              >
+              <ul
+                id="daycare-menu"
+                class="hidden absolute bg-white text-biru-utama mt-2 w-48 shadow-md rounded z-10"
+              >
+                <li>
+                  <a
+                    href="program.html"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Program</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="program.html"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Keunggulan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="fasilitas.html"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Fasilitas C</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#operasional"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Jam Operasional</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="biaya.html"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Paket Biaya Daycare</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a
+                href="index.html#daftar"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                >Cara Daftar</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                >Berita</a
+              >
+            </li>
+
+            <!-- Lainnya Dropdown -->
+            <li class="relative group">
+              <a
+                href="#"
+                class="block px-4 py-2 hover:text-gray-300 transition duration-300 ease-in-out"
+                id="lainnya-btn"
+                >Lainnya</a
+              >
+              <ul
+                id="lainnya-menu"
+                class="hidden absolute bg-white text-biru-utama mt-2 w-48 shadow-md rounded z-10"
+              >
+                <li>
+                  <a
+                    href="index.html#gallery"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Video</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#gallery"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >Galeri</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#gallery"
+                    class="block px-4 py-2 hover:bg-gray-200 transition duration-300 ease-in-out"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero py-16 font-inter pt-24 relative">
+      <div
+        class="mt-12 gap-12 container mx-auto px-12 flex flex-col-reverse md:flex-row items-center justify-between h-full"
+      >
+        <!-- Kanan: Header dan Deskripsi -->
+        <div class="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+          <h1 class="text-4xl font-bold text-teal-900 mb-4">
+            Keunggulan Anak Lebah Daycare
+          </h1>
+
+            <p class="text-lg text-teal-900 mb-6">
+              Menyediakan beragam manfaat untuk memberikan pelayanan terbaik bagi buah hati Ayah dan Bunda:
+            </p>
+            <ol class="list-decimal pl-6 text-lg text-teal-900 space-y-4">
+              <li>
+                <strong>Lingkungan Aman dan Nyaman:</strong> Anak Lebah Daycare menyediakan fasilitas yang aman, bersih, dan nyaman, dirancang untuk memastikan anak-anak merasa tenang dan terlindungi selama bermain dan belajar.
+              </li>
+              <li>
+                <strong>Program Edukatif Terstruktur:</strong> Program daycare dirancang secara kreatif dan sesuai dengan tahap perkembangan anak, baik infant maupun toddler, untuk mendukung pertumbuhan fisik, kognitif, dan emosional mereka.
+              </li>
+              <li>
+                <strong>Pengasuh dan Pengajar Berpengalaman:</strong> Pengasuh dan pendidik yang profesional dan penuh kasih sayang, berpengalaman dalam memahami kebutuhan anak-anak di berbagai usia, memastikan anak mendapat perhatian dan pendampingan terbaik.
+              </li>
+              <li>
+                <strong>Makanan Sehat dan Bergizi:</strong> Anak Lebah Daycare menyediakan makanan sehat, bergizi, serta camilan dan buah segar, dengan menu variatif setiap harinya untuk mendukung pertumbuhan anak secara optimal.
+              </li>
+              <li>
+                <strong>Fasilitas Lengkap dan Berkualitas:</strong> Daycare ini dilengkapi dengan mainan edukatif, buku-buku, ruang tidur yang nyaman, serta area bermain yang aman dan menyenangkan, dirancang sesuai kebutuhan usia anak.
+              </li>
+              <li>
+                <strong>Pendekatan Holistik dan Individual:</strong> Setiap anak dianggap unik, sehingga pendekatan yang digunakan menekankan pada pengembangan holistik serta menyesuaikan kebutuhan individual untuk memaksimalkan potensi mereka.
+              </li>
+              <li>
+                <strong>Aktivitas Luar Ruangan dan Trip:</strong> Anak Lebah Daycare rutin mengadakan trip bermain ke luar setiap dua bulan sekali, memberikan pengalaman baru yang mendukung eksplorasi dan rasa ingin tahu anak.
+              </li>
+              <li>
+                <strong>Komunikasi Terbuka dengan Orang Tua:</strong> Adanya komunikasi yang aktif dan transparan dengan orang tua, baik melalui laporan perkembangan harian maupun acara terbuka yang melibatkan keluarga.
+              </li>
+              <li>
+                <strong>Lingkungan Sosial Positif:</strong> Anak-anak diajak untuk berinteraksi, berbagi, dan belajar bersosialisasi dengan teman sebaya, membangun keterampilan sosial yang penting sejak dini.
+              </li>
+              <li>
+                <strong>Nilai-Nilai Positif dan Pembelajaran Moral:</strong> Daycare ini juga menanamkan nilai-nilai moral dan etika positif, membantu membentuk karakter anak yang baik dan penuh rasa hormat.
+              </li>
+            </ol>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-ijotosca-daycare text-white py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Bagian Lokasi -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Lokasi Kami</h3>
+            <p class="text-white">Kunjungi kami di alamat berikut:</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.122127767497!2d107.5385019!3d-6.8759681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e513e336e335%3A0xd3991bff7ed36515!2sAnak%20Lebah%20Daycare!5e0!3m2!1sid!2sid!4v1734483363833!5m2!1sid!2sid"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Bagian Sosial Media -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Ikuti Kami</h3>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-blue-500 hover:text-blue-300 transition-colors duration-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3C22.0424 3.6754 20.9821 4.1921 19.86 4.53C19.2577 3.8372 18.4573 3.3467 17.567 3.123C16.6767 2.8993 15.7395 2.9523 14.8821 3.276C14.0247 3.5997 13.2819 4.1744 12.75 4.921C12.2181 5.6676 11.9178 6.5502 11.875 7.46V8.53C10.044 8.5751 8.2294 8.1612 6.5499 7.321C4.8703 6.4808 3.3715 5.2301 2.16 3.66C2.16 3.66 -0.359998 9.02 5.34 12.14C4.077 12.7999 2.6897 13.1333 1.29 13.11C6.06 15.72 12.29 13.11 12.29 7.5C12.2883 7.2202 12.2595 6.9414 12.204 6.67C13.6717 5.5626 15.4621 4.9425 17.32 4.88C16.8852 5.4458 16.3706 5.9312 15.79 6.32C16.3702 6.2397 16.9356 6.0921 17.48 5.88C17.0406 6.4553 16.5125 6.9466 15.92 7.33L23 3Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-blue-400 hover:text-blue-200 transition-colors duration-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3C22.0424 3.6754 20.9821 4.1921 19.86 4.53C19.2577 3.8372 18.4573 3.3467 17.567 3.123C16.6767 2.8993 15.7395 2.9523 14.8821 3.276C14.0247 3.5997 13.2819 4.1744 12.75 4.921C12.2181 5.6676 11.9178 6.5502 11.875 7.46V8.53C10.044 8.5751 8.2294 8.1612 6.5499 7.321C4.8703 6.4808 3.3715 5.2301 2.16 3.66C2.16 3.66 -0.359998 9.02 5.34 12.14C4.077 12.7999 2.6897 13.1333 1.29 13.11C6.06 15.72 12.29 13.11 12.29 7.5C12.2883 7.2202 12.2595 6.9414 12.204 6.67C13.6717 5.5626 15.4621 4.9425 17.32 4.88C16.8852 5.4458 16.3706 5.9312 15.79 6.32C16.3702 6.2397 16.9356 6.0921 17.48 5.88C17.0406 6.4553 16.5125 6.9466 15.92 7.33L23 3Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-pink-500 hover:text-pink-300 transition-colors duration-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163C6.577 2.163 2.163 6.577 2.163 12C2.163 17.423 6.577 21.837 12 21.837C17.423 21.837 21.837 17.423 21.837 12C21.837 6.577 17.423 2.163 12 2.163ZM12 19.837C7.581 19.837 4.163 16.419 4.163 12C4.163 7.581 7.581 4.163 12 4.163C16.419 4.163 19.837 7.581 19.837 12C19.837 16.419 16.419 19.837 12 19.837ZM12 7.163C9.243 7.163 7.163 9.243 7.163 12C7.163 14.757 9.243 16.837 12 16.837C14.757 16.837 16.837 14.757 16.837 12C16.837 9.243 14.757 7.163 12 7.163ZM12 14.837C10.598 14.837 9.163 13.402 9.163 12C9.163 10.598 10.598 9.163 12 9.163C13.402 9.163 14.837 10.598 14.837 12C14.837 13.402 13.402 14.837 12 14.837ZM16.837 7.163C17.319 7.163 17.713 6.769 17.713 6.287C17.713 5.805 17.319 5.411 16.837 5.411C16.355 5.411 15.961 5.805 15.961 6.287C15.961 6.769 16.355 7.163 16.837 7.163Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Bagian Hak Cipta -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Hak Cipta</h3>
+            <p class="text-lg text-white">
+              &copy; 2024 Nama Perusahaan atau Organisasi. Semua hak cipta
+              dilindungi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- Script untuk Navbar dan Hamburger -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menu = document.getElementById("menu");
+
+      // Hamburger menu toggle
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("flex");
+        menu.classList.toggle("flex-col");
+      });
+
+      // Dropdown menus
+      const dropdowns = [
+        { button: "tentang-btn", menu: "tentang-menu" },
+        { button: "daycare-btn", menu: "daycare-menu" },
+        { button: "lainnya-btn", menu: "lainnya-menu" },
+      ];
+
+      dropdowns.forEach(({ button, menu }) => {
+        const btn = document.getElementById(button);
+        const dropdown = document.getElementById(menu);
+
+        // Show dropdown on hover or focus
+        btn.addEventListener("mouseenter", () => {
+          dropdown.classList.remove("hidden");
+        });
+        btn.addEventListener("mouseleave", () => {
+          setTimeout(() => {
+            if (!dropdown.matches(":hover")) {
+              dropdown.classList.add("hidden");
+            }
+          }, 200);
+        });
+
+        dropdown.addEventListener("mouseenter", () => {
+          dropdown.classList.remove("hidden");
+        });
+        dropdown.addEventListener("mouseleave", () => {
+          dropdown.classList.add("hidden");
+        });
+      });
+    </script>
+
+    <!-- Scroll Navbar -->
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("shadow-md");
+        } else {
+          navbar.classList.remove("shadow-md");
+        }
+      });
+    </script>
+
+    <!-- Gallery -->
+    <script>
+      const galleryGrid = document.getElementById("gallery-grid");
+      const loadMoreGallery = document.getElementById("load-more-gallery");
+
+      // Data foto tambahan
+      const morePhotos = [
+        { src: "../src/img/gambar5.png", alt: "Foto 5" },
+        { src: "../src/img/gambar6.png", alt: "Foto 6" },
+        { src: "../src/img/gambar7.png", alt: "Foto 7" },
+        { src: "../src/img/gambar8.png", alt: "Foto 8" },
+      ];
+
+      // Event untuk menampilkan foto tambahan
+      loadMoreGallery.addEventListener("click", () => {
+        morePhotos.forEach((photo) => {
+          const photoDiv = document.createElement("div");
+          photoDiv.className = "overflow-hidden rounded-lg shadow-lg";
+
+          const photoImg = document.createElement("img");
+          photoImg.src = photo.src;
+          photoImg.alt = photo.alt;
+          photoImg.className =
+            "w-full h-48 object-cover hover:scale-110 transition-transform duration-300";
+
+          photoDiv.appendChild(photoImg);
+          galleryGrid.appendChild(photoDiv);
+        });
+
+        loadMoreGallery.style.display = "none"; // Hilangkan tombol setelah diklik
+      });
+    </script>
+
+    <!-- Testimonial -->
+
+    <script>
+      const slider = document.getElementById("testimonial-slider");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      let currentIndex = 0;
+
+      // Fungsi untuk menghitung slide dan memperbarui slider
+      function updateSlider() {
+        let slideWidth;
+        let totalSlides;
+
+        // Tentukan berapa banyak card yang akan ditampilkan per slide
+        if (window.innerWidth >= 1024) {
+          // Desktop: 3 card per slide
+          slideWidth = 33.33; // 100% / 3 = 33.33%
+          totalSlides = Math.ceil(slider.children.length / 3); // Menghitung jumlah slide (2 slide untuk 6 card)
+        } else {
+          // Mobile: 1 card per slide
+          slideWidth = 100; // 100% per slide untuk mobile
+          totalSlides = slider.children.length; // 1 card per slide, jadi total slide sama dengan jumlah card
+        }
+
+        // Update posisi slider
+        slider.style.transition = "transform 0.3s ease"; // Menambahkan efek smooth
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+
+        // Pastikan currentIndex tetap berada dalam jumlah slide yang valid
+        if (currentIndex >= totalSlides) {
+          currentIndex = 0;
+        } else if (currentIndex < 0) {
+          currentIndex = totalSlides - 1;
+        }
+      }
+
+      // Tombol Prev
+      prevBtn.addEventListener("click", () => {
+        currentIndex--;
+        updateSlider();
+      });
+
+      // Tombol Next
+      nextBtn.addEventListener("click", () => {
+        currentIndex++;
+        updateSlider();
+      });
+
+      // Responsif: Update jumlah slide saat ukuran jendela berubah
+      window.addEventListener("resize", () => {
+        updateSlider();
+      });
+
+      // Inisialisasi pertama kali slider
+      updateSlider();
+    </script>
+
+    <!-- Legalitas Section -->
+
+    <!-- JavaScript -->
+    <script>
+      const gridContainer = document.getElementById("izin-grid");
+      const loadMoreBtn = document.getElementById("load-more");
+
+      // Data Dummy untuk Izin Tambahan
+      const extraData = [
+        { src: "https://via.placeholder.com/300", alt: "Izin 5" },
+        { src: "https://via.placeholder.com/300", alt: "Izin 6" },
+        { src: "https://via.placeholder.com/300", alt: "Izin 7" },
+        { src: "https://via.placeholder.com/300", alt: "Izin 8" },
+      ];
+
+      // Event untuk Tombol Selengkapnya
+      loadMoreBtn.addEventListener("click", () => {
+        extraData.forEach((item) => {
+          const newDiv = document.createElement("div");
+          newDiv.className = "p-4 border border-gray-200 rounded-lg shadow-md";
+
+          const newImage = document.createElement("img");
+          newImage.src = item.src;
+          newImage.alt = item.alt;
+          newImage.className = "w-full h-auto rounded-md";
+
+          newDiv.appendChild(newImage);
+          gridContainer.appendChild(newDiv);
+        });
+
+        loadMoreBtn.style.display = "none"; // Hilangkan tombol setelah load
+      });
+    </script>
+  </body>
+</html>
